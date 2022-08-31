@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peanunt paste 🥜</title>
+    <style>
+      .container {
+        background: radial-gradient(
+          859px at 10% 20%,
+          rgb(245, 220, 154) 0%,
+          rgb(164, 78, 51) 90% );
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        border-radius: 10px;
+        font-family: Gill Sans Extrabold, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        border: 1px solid;
+        padding: 15px 20px;
+        line-height: 50px;
+        border-radius: 10px;
+        font-size: 45px;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 26px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        color: white;
+        text-align: justify;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: black;
+        color: azure;
+        font-size: 24px;
+        padding: 20px 25px;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #022e1f;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>I love paste</h1>
+    <h2>Especially peanunt paste</h2>
+    <hr>
+    <img
+      src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1520981275%2F1803w-homemade-peanut-butter-recipe.jpg%3Fitok%3DPwAxkP2C"
+      alt="Peanunt paste"
+    />
+    <hr>
+    <p>
+      <strong>Peanunt paste</strong> is made from dry and roasted peanuts. It can be easily made
+      at home using a food processor. All that needs to be done is place peanuts
+      in a food processor and let it run for nearly 4 to 5 minutes. During this
+      time, the peanuts go through a series of changes from crumbs to dry balls
+      to finally a smooth and creamy <em>“liquid”</em> peanut paste.
+    </p>
+    <a
+      href="https://en.wikipedia.org/wiki/Peanut_paste"
+      target="_blank"
+      class="learn-more"
+    >
+      Learn more on Wikipedia
+    </a>
+    <button class="buyButton">Buy Peanunt paste</button>
+    <p class="footer">This page was built by Natalia Ploskan</p>
+  </body>
+  </div>
+  <script>
+    function buy () {
+        let name = prompt ("What is your name?");
+        alert ("Thank you, " + name + "! We'll sent you a lot of peanunt paste!");
+    }
+    let buyButton = document.querySelector(".buyButton");
+    buyButton.addEventListener("click", buy);
+  </script>
+</html>
